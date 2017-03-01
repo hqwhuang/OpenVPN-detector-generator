@@ -1,0 +1,140 @@
+<div class="col-md-4 column">
+</div>
+<div class="col-md-4 column">
+    <table width="300">
+        <tbody>
+        <tr>
+            <td>
+                Total packets:
+            </td>
+            <td width="100">
+                {{ count }}
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Total OpenVPN packet:
+            </td>
+            <td width="100">
+                {{ num_openVpn }}
+            </td>
+            <td>
+                {{ chart_true }}%
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Total suspicious OpenVPN packet:
+            </td>
+            <td width="100">
+                {{ num_suspVpn }}
+            </td>
+            <td>
+                {{ chart_susp }}%
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="col-md-4 column">
+</div>
+<canvas id="something" width="300" height="200"></canvas>
+<div class="row clearfix">
+    <div class="col-md-4 column">
+    </div>
+    <div class="col-md-4 column">
+        <table width="300">
+            <tbody>
+            <tr>
+                <td>
+                    OpenVPN packet
+                </td>
+                <td>
+                    <button type="button" class="btn disabled btn-sm" style="background-color: #2c9c69"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Suspicious OpenVPN packet
+                </td>
+                <td>
+                    <button type="button" class="btn disabled btn-sm" style="background-color: #C07AB8"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Other packet
+                </td>
+                <td>
+                    <button type="button" class="btn disabled btn-sm" style="background-color: #637b85"></button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4 column">
+    </div>
+    <br>
+    <canvas id="something2" width="600" height="400"></canvas>
+</div>
+<script type="text/javascript">
+    var data = [
+        {
+            value: {{ chart_true }},
+            color:"#2c9c69"
+        },
+        {
+            value : {{ chart_susp }},
+            color : "#C07AB8"
+        },
+        {
+            value : {{ chart_false }},
+            color : "#637b85"
+        },
+
+    ];
+    var canvas = document.getElementById("something");
+    var ctx = canvas.getContext("2d");
+    new Chart(ctx).Doughnut(data);
+</script>
+<script type="text/javascript">
+    var data = [
+        {
+            value: {{ chart_true }},
+            color:"#2c9c69"
+        },
+        {
+            value : {{ chart_susp }},
+            color : "#C07AB8"
+        },
+        {
+            value : {{ chart_false }},
+            color : "#637b85"
+        },
+
+    ];
+    var canvas = document.getElementById("something");
+    var ctx = canvas.getContext("2d");
+    new Chart(ctx).Doughnut(data);
+</script>
+<script type="text/javascript">
+    var canvas = document.getElementById("something2");
+    var ctx = canvas.getContext("2d");
+    var data = {
+		labels: ["opcode 1", "opcode 2", "opcode 3", "opcode 4", "opcode 5", "opcode 6", "opcode 7", "opcode 8", "opcode 9"],
+		datasets: [
+			{
+				label: "My First dataset",
+				fillColor: "rgba(220,220,220,0.5)",
+				strokeColor: "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(220,220,220,0.75)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data: [{{opcode1}}, {{opcode2}}, {{opcode3}}, {{opcode4}}, {{opcode5}}, {{opcode6}}, {{opcode7}}, {{opcode8}}, {{opcode9}}]
+			}
+		]
+	};
+    new Chart(ctx).Bar(data);
+</script>

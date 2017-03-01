@@ -1,0 +1,1353 @@
+5374:C 08 Dec 10:28:08.949 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+5374:M 08 Dec 10:28:08.951 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 5374
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+5374:M 08 Dec 10:28:08.964 # Server started, Redis version 3.2.0
+5374:M 08 Dec 10:28:08.965 * The server is now ready to accept connections on port 6379
+5374:M 08 Dec 10:33:09.015 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 10:33:09.016 * Background saving started by pid 5404
+5404:C 08 Dec 10:33:09.022 * DB saved on disk
+5374:M 08 Dec 10:33:09.119 * Background saving terminated with success
+5374:M 08 Dec 10:38:10.083 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 10:38:10.084 * Background saving started by pid 5413
+5413:C 08 Dec 10:38:10.085 * DB saved on disk
+5374:M 08 Dec 10:38:10.185 * Background saving terminated with success
+5374:M 08 Dec 10:46:05.547 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 10:46:05.547 * Background saving started by pid 5425
+5425:C 08 Dec 10:46:05.550 * DB saved on disk
+5374:M 08 Dec 10:46:05.647 * Background saving terminated with success
+5374:M 08 Dec 10:51:06.001 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 10:51:06.002 * Background saving started by pid 5455
+5455:C 08 Dec 10:51:06.004 * DB saved on disk
+5374:M 08 Dec 10:51:06.106 * Background saving terminated with success
+5374:M 08 Dec 10:56:07.062 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 10:56:07.062 * Background saving started by pid 5465
+5465:C 08 Dec 10:56:07.064 * DB saved on disk
+5374:M 08 Dec 10:56:07.167 * Background saving terminated with success
+5374:M 08 Dec 11:02:57.488 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:02:57.488 * Background saving started by pid 5484
+5484:C 08 Dec 11:02:57.491 * DB saved on disk
+5374:M 08 Dec 11:02:57.592 * Background saving terminated with success
+5374:M 08 Dec 11:07:58.081 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:07:58.081 * Background saving started by pid 5507
+5507:C 08 Dec 11:07:58.085 * DB saved on disk
+5374:M 08 Dec 11:07:58.183 * Background saving terminated with success
+5374:M 08 Dec 11:12:59.015 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:12:59.017 * Background saving started by pid 5532
+5532:C 08 Dec 11:12:59.022 * DB saved on disk
+5374:M 08 Dec 11:12:59.122 * Background saving terminated with success
+5374:M 08 Dec 11:18:00.036 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:18:00.036 * Background saving started by pid 5555
+5555:C 08 Dec 11:18:00.039 * DB saved on disk
+5374:M 08 Dec 11:18:00.141 * Background saving terminated with success
+5374:M 08 Dec 11:23:01.055 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:23:01.056 * Background saving started by pid 5595
+5595:C 08 Dec 11:23:01.057 * DB saved on disk
+5374:M 08 Dec 11:23:01.156 * Background saving terminated with success
+5374:M 08 Dec 11:32:17.615 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:32:17.616 * Background saving started by pid 5746
+5746:C 08 Dec 11:32:17.620 * DB saved on disk
+5374:M 08 Dec 11:32:17.717 * Background saving terminated with success
+5374:M 08 Dec 11:37:18.022 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:37:18.022 * Background saving started by pid 5917
+5917:C 08 Dec 11:37:18.024 * DB saved on disk
+5374:M 08 Dec 11:37:18.125 * Background saving terminated with success
+5374:M 08 Dec 11:42:19.032 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:42:19.032 * Background saving started by pid 6064
+6064:C 08 Dec 11:42:19.034 * DB saved on disk
+5374:M 08 Dec 11:42:19.137 * Background saving terminated with success
+5374:M 08 Dec 11:47:20.022 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:47:20.022 * Background saving started by pid 6180
+6180:C 08 Dec 11:47:20.024 * DB saved on disk
+5374:M 08 Dec 11:47:20.123 * Background saving terminated with success
+5374:M 08 Dec 11:52:21.102 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:52:21.102 * Background saving started by pid 6371
+6371:C 08 Dec 11:52:21.106 * DB saved on disk
+5374:M 08 Dec 11:52:21.207 * Background saving terminated with success
+5374:M 08 Dec 11:57:22.022 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 11:57:22.023 * Background saving started by pid 6419
+6419:C 08 Dec 11:57:22.029 * DB saved on disk
+5374:M 08 Dec 11:57:22.125 * Background saving terminated with success
+5374:M 08 Dec 13:11:20.560 * 1 changes in 3600 seconds. Saving...
+5374:M 08 Dec 13:11:20.561 * Background saving started by pid 6481
+6481:C 08 Dec 13:11:20.563 * DB saved on disk
+5374:M 08 Dec 13:11:20.663 * Background saving terminated with success
+5374:M 08 Dec 13:16:21.096 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 13:16:21.096 * Background saving started by pid 6563
+6563:C 08 Dec 13:16:21.097 * DB saved on disk
+5374:M 08 Dec 13:16:21.198 * Background saving terminated with success
+5374:M 08 Dec 13:21:22.008 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 13:21:22.009 * Background saving started by pid 6609
+6609:C 08 Dec 13:21:22.014 * DB saved on disk
+5374:M 08 Dec 13:21:22.111 * Background saving terminated with success
+5374:M 08 Dec 13:26:23.011 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 13:26:23.012 * Background saving started by pid 6621
+6621:C 08 Dec 13:26:23.015 * DB saved on disk
+5374:M 08 Dec 13:26:23.113 * Background saving terminated with success
+5374:M 08 Dec 14:14:06.579 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 14:14:06.581 * Background saving started by pid 6855
+6855:C 08 Dec 14:14:06.585 * DB saved on disk
+5374:M 08 Dec 14:14:06.682 * Background saving terminated with success
+5374:M 08 Dec 14:19:07.090 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 14:19:07.091 * Background saving started by pid 6932
+6932:C 08 Dec 14:19:07.126 * DB saved on disk
+5374:M 08 Dec 14:19:07.192 * Background saving terminated with success
+5374:M 08 Dec 14:24:08.091 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 14:24:08.091 * Background saving started by pid 6991
+6991:C 08 Dec 14:24:08.094 * DB saved on disk
+5374:M 08 Dec 14:24:08.193 * Background saving terminated with success
+5374:M 08 Dec 14:29:09.030 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 14:29:09.033 * Background saving started by pid 7080
+7080:C 08 Dec 14:29:09.037 * DB saved on disk
+5374:M 08 Dec 14:29:09.134 * Background saving terminated with success
+5374:M 08 Dec 14:46:42.703 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 14:46:42.703 * Background saving started by pid 7204
+7204:C 08 Dec 14:46:42.706 * DB saved on disk
+5374:M 08 Dec 14:46:42.804 * Background saving terminated with success
+5374:M 08 Dec 14:51:43.095 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 14:51:43.096 * Background saving started by pid 7287
+7287:C 08 Dec 14:51:43.134 * DB saved on disk
+5374:M 08 Dec 14:51:43.198 * Background saving terminated with success
+5374:M 08 Dec 14:56:44.002 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 14:56:44.003 * Background saving started by pid 7321
+7321:C 08 Dec 14:56:44.007 * DB saved on disk
+5374:M 08 Dec 14:56:44.104 * Background saving terminated with success
+5374:M 08 Dec 15:01:45.042 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:01:45.046 * Background saving started by pid 7445
+7445:C 08 Dec 15:01:45.052 * DB saved on disk
+5374:M 08 Dec 15:01:45.148 * Background saving terminated with success
+5374:M 08 Dec 15:06:46.041 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:06:46.042 * Background saving started by pid 7516
+7516:C 08 Dec 15:06:46.047 * DB saved on disk
+5374:M 08 Dec 15:06:46.143 * Background saving terminated with success
+5374:M 08 Dec 15:13:41.147 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:13:41.147 * Background saving started by pid 7569
+7569:C 08 Dec 15:13:41.151 * DB saved on disk
+5374:M 08 Dec 15:13:41.247 * Background saving terminated with success
+5374:M 08 Dec 15:18:42.032 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:18:42.033 * Background saving started by pid 7681
+7681:C 08 Dec 15:18:42.037 * DB saved on disk
+5374:M 08 Dec 15:18:42.134 * Background saving terminated with success
+5374:M 08 Dec 15:23:43.018 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:23:43.019 * Background saving started by pid 7692
+7692:C 08 Dec 15:23:43.053 * DB saved on disk
+5374:M 08 Dec 15:23:43.122 * Background saving terminated with success
+5374:M 08 Dec 15:30:54.086 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:30:54.087 * Background saving started by pid 7783
+7783:C 08 Dec 15:30:54.090 * DB saved on disk
+5374:M 08 Dec 15:30:54.188 * Background saving terminated with success
+5374:M 08 Dec 15:35:55.069 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:35:55.070 * Background saving started by pid 7851
+7851:C 08 Dec 15:35:55.071 * DB saved on disk
+5374:M 08 Dec 15:35:55.171 * Background saving terminated with success
+5374:M 08 Dec 15:41:54.649 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:41:54.650 * Background saving started by pid 7990
+7990:C 08 Dec 15:41:54.652 * DB saved on disk
+5374:M 08 Dec 15:41:54.753 * Background saving terminated with success
+5374:M 08 Dec 15:46:55.043 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:46:55.043 * Background saving started by pid 8059
+8059:C 08 Dec 15:46:55.045 * DB saved on disk
+5374:M 08 Dec 15:46:55.145 * Background saving terminated with success
+5374:M 08 Dec 15:51:56.038 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 15:51:56.039 * Background saving started by pid 8176
+8176:C 08 Dec 15:51:56.043 * DB saved on disk
+5374:M 08 Dec 15:51:56.141 * Background saving terminated with success
+5374:M 08 Dec 16:01:00.700 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:01:00.701 * Background saving started by pid 8225
+8225:C 08 Dec 16:01:00.703 * DB saved on disk
+5374:M 08 Dec 16:01:00.803 * Background saving terminated with success
+5374:M 08 Dec 16:06:01.095 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:06:01.095 * Background saving started by pid 8297
+8297:C 08 Dec 16:06:01.098 * DB saved on disk
+5374:M 08 Dec 16:06:01.196 * Background saving terminated with success
+5374:M 08 Dec 16:11:02.092 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:11:02.092 * Background saving started by pid 8437
+8437:C 08 Dec 16:11:02.094 * DB saved on disk
+5374:M 08 Dec 16:11:02.194 * Background saving terminated with success
+5374:M 08 Dec 16:16:03.027 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:16:03.028 * Background saving started by pid 8441
+8441:C 08 Dec 16:16:03.032 * DB saved on disk
+5374:M 08 Dec 16:16:03.133 * Background saving terminated with success
+5374:M 08 Dec 16:21:04.058 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:21:04.059 * Background saving started by pid 8518
+8518:C 08 Dec 16:21:04.066 * DB saved on disk
+5374:M 08 Dec 16:21:04.162 * Background saving terminated with success
+5374:M 08 Dec 16:26:05.060 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:26:05.061 * Background saving started by pid 8582
+8582:C 08 Dec 16:26:05.063 * DB saved on disk
+5374:M 08 Dec 16:26:05.163 * Background saving terminated with success
+5374:M 08 Dec 16:31:06.067 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:31:06.068 * Background saving started by pid 8689
+8689:C 08 Dec 16:31:06.069 * DB saved on disk
+5374:M 08 Dec 16:31:06.169 * Background saving terminated with success
+5374:M 08 Dec 16:36:07.021 * 100 changes in 300 seconds. Saving...
+5374:M 08 Dec 16:36:07.021 * Background saving started by pid 8729
+8729:C 08 Dec 16:36:07.057 * DB saved on disk
+5374:M 08 Dec 16:36:07.127 * Background saving terminated with success
+5374:M 10 Dec 17:38:41.356 * 1 changes in 3600 seconds. Saving...
+5374:M 10 Dec 17:38:41.358 * Background saving started by pid 12269
+12269:C 10 Dec 17:38:41.361 * DB saved on disk
+5374:M 10 Dec 17:38:41.459 * Background saving terminated with success
+5374:M 10 Dec 17:43:42.054 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 17:43:42.054 * Background saving started by pid 12322
+12322:C 10 Dec 17:43:42.089 * DB saved on disk
+5374:M 10 Dec 17:43:42.156 * Background saving terminated with success
+5374:M 10 Dec 17:56:18.091 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 17:56:18.092 * Background saving started by pid 12430
+12430:C 10 Dec 17:56:18.094 * DB saved on disk
+5374:M 10 Dec 17:56:18.194 * Background saving terminated with success
+5374:M 10 Dec 18:01:19.037 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 18:01:19.038 * Background saving started by pid 12599
+12599:C 10 Dec 18:01:19.040 * DB saved on disk
+5374:M 10 Dec 18:01:19.140 * Background saving terminated with success
+5374:M 10 Dec 18:06:20.090 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 18:06:20.091 * Background saving started by pid 12736
+12736:C 10 Dec 18:06:20.094 * DB saved on disk
+5374:M 10 Dec 18:06:20.196 * Background saving terminated with success
+5374:M 10 Dec 18:13:30.279 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 18:13:30.280 * Background saving started by pid 12747
+12747:C 10 Dec 18:13:30.283 * DB saved on disk
+5374:M 10 Dec 18:13:30.382 * Background saving terminated with success
+5374:M 10 Dec 18:18:31.058 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 18:18:31.058 * Background saving started by pid 12756
+12756:C 10 Dec 18:18:31.093 * DB saved on disk
+5374:M 10 Dec 18:18:31.163 * Background saving terminated with success
+5374:M 10 Dec 18:23:32.087 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 18:23:32.088 * Background saving started by pid 12764
+12764:C 10 Dec 18:23:32.089 * DB saved on disk
+5374:M 10 Dec 18:23:32.190 * Background saving terminated with success
+5374:M 10 Dec 18:36:00.282 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 18:36:00.283 * Background saving started by pid 12847
+12847:C 10 Dec 18:36:00.286 * DB saved on disk
+5374:M 10 Dec 18:36:00.388 * Background saving terminated with success
+5374:M 10 Dec 18:41:01.048 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 18:41:01.049 * Background saving started by pid 12940
+12940:C 10 Dec 18:41:01.051 * DB saved on disk
+5374:M 10 Dec 18:41:01.150 * Background saving terminated with success
+5374:M 10 Dec 19:05:44.951 * 100 changes in 300 seconds. Saving...
+5374:M 10 Dec 19:05:44.953 * Background saving started by pid 14140
+14140:C 10 Dec 19:05:44.956 * DB saved on disk
+5374:M 10 Dec 19:05:45.058 * Background saving terminated with success
+5374:M 10 Dec 20:15:03.070 * 1 changes in 3600 seconds. Saving...
+5374:M 10 Dec 20:15:03.070 * Background saving started by pid 14477
+14477:C 10 Dec 20:15:03.072 * DB saved on disk
+5374:M 10 Dec 20:15:03.178 * Background saving terminated with success
+495:C 11 Dec 18:45:45.244 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+495:M 11 Dec 18:45:45.246 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 495
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+495:M 11 Dec 18:45:45.253 # Server started, Redis version 3.2.0
+495:M 11 Dec 18:45:45.254 * DB loaded from disk: 0.001 seconds
+495:M 11 Dec 18:45:45.254 * The server is now ready to accept connections on port 6379
+495:M 11 Dec 18:50:46.061 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 18:50:46.062 * Background saving started by pid 653
+653:C 11 Dec 18:50:46.064 * DB saved on disk
+495:M 11 Dec 18:50:46.163 * Background saving terminated with success
+495:M 11 Dec 19:50:47.020 * 1 changes in 3600 seconds. Saving...
+495:M 11 Dec 19:50:47.021 * Background saving started by pid 1633
+1633:C 11 Dec 19:50:47.022 * DB saved on disk
+495:M 11 Dec 19:50:47.124 * Background saving terminated with success
+495:M 11 Dec 20:09:38.944 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:09:38.944 * Background saving started by pid 2394
+2394:C 11 Dec 20:09:38.946 * DB saved on disk
+495:M 11 Dec 20:09:39.047 * Background saving terminated with success
+495:M 11 Dec 20:14:40.004 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:14:40.005 * Background saving started by pid 2441
+2441:C 11 Dec 20:14:40.007 * DB saved on disk
+495:M 11 Dec 20:14:40.106 * Background saving terminated with success
+495:M 11 Dec 20:19:41.044 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:19:41.045 * Background saving started by pid 2446
+2446:C 11 Dec 20:19:41.047 * DB saved on disk
+495:M 11 Dec 20:19:41.146 * Background saving terminated with success
+495:M 11 Dec 20:24:42.019 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:24:42.020 * Background saving started by pid 2459
+2459:C 11 Dec 20:24:42.026 * DB saved on disk
+495:M 11 Dec 20:24:42.123 * Background saving terminated with success
+495:M 11 Dec 20:29:43.066 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:29:43.067 * Background saving started by pid 2463
+2463:C 11 Dec 20:29:43.068 * DB saved on disk
+495:M 11 Dec 20:29:43.167 * Background saving terminated with success
+495:M 11 Dec 20:34:44.092 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:34:44.092 * Background saving started by pid 2470
+2470:C 11 Dec 20:34:44.096 * DB saved on disk
+495:M 11 Dec 20:34:44.192 * Background saving terminated with success
+495:M 11 Dec 20:39:45.093 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:39:45.094 * Background saving started by pid 2474
+2474:C 11 Dec 20:39:45.095 * DB saved on disk
+495:M 11 Dec 20:39:45.196 * Background saving terminated with success
+495:M 11 Dec 20:53:50.176 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:53:50.176 * Background saving started by pid 2841
+2841:C 11 Dec 20:53:50.179 * DB saved on disk
+495:M 11 Dec 20:53:50.279 * Background saving terminated with success
+495:M 11 Dec 20:58:51.007 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 20:58:51.008 * Background saving started by pid 2937
+2937:C 11 Dec 20:58:51.009 * DB saved on disk
+495:M 11 Dec 20:58:51.108 * Background saving terminated with success
+4313:C 11 Dec 22:59:50.031 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+4313:M 11 Dec 22:59:50.033 * Increased maximum number of open files to 10032 (it was originally set to 256).
+4313:M 11 Dec 22:59:50.034 # Creating Server TCP listening socket *:6379: bind: Address already in use
+495:M 11 Dec 23:00:19.604 * 1 changes in 3600 seconds. Saving...
+495:M 11 Dec 23:00:19.604 * Background saving started by pid 4336
+4336:C 11 Dec 23:00:19.607 * DB saved on disk
+495:M 11 Dec 23:00:19.709 * Background saving terminated with success
+495:M 11 Dec 23:01:20.089 * 10000 changes in 60 seconds. Saving...
+495:M 11 Dec 23:01:20.089 * Background saving started by pid 4357
+4357:C 11 Dec 23:01:20.113 * DB saved on disk
+495:M 11 Dec 23:01:20.191 * Background saving terminated with success
+495:M 11 Dec 23:06:21.101 * 100 changes in 300 seconds. Saving...
+495:M 11 Dec 23:06:21.101 * Background saving started by pid 4398
+4398:C 11 Dec 23:06:21.103 * DB saved on disk
+495:M 11 Dec 23:06:21.206 * Background saving terminated with success
+495:signal-handler (1481473200) Received SIGTERM scheduling shutdown...
+495:M 12 Dec 00:20:00.503 # User requested shutdown...
+495:M 12 Dec 00:20:00.503 * Saving the final RDB snapshot before exiting.
+495:M 12 Dec 00:20:00.504 * DB saved on disk
+495:M 12 Dec 00:20:00.504 # Redis is now ready to exit, bye bye...
+589:C 12 Dec 10:52:31.127 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+589:M 12 Dec 10:52:31.129 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 589
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+589:M 12 Dec 10:52:31.137 # Server started, Redis version 3.2.0
+589:M 12 Dec 10:52:31.138 * DB loaded from disk: 0.001 seconds
+589:M 12 Dec 10:52:31.138 * The server is now ready to accept connections on port 6379
+623:C 12 Dec 10:54:08.088 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+623:M 12 Dec 10:54:08.090 * Increased maximum number of open files to 10032 (it was originally set to 256).
+623:M 12 Dec 10:54:08.091 # Creating Server TCP listening socket *:6379: bind: Address already in use
+589:M 12 Dec 10:57:32.070 * 100 changes in 300 seconds. Saving...
+589:M 12 Dec 10:57:32.070 * Background saving started by pid 665
+665:C 12 Dec 10:57:32.072 * DB saved on disk
+589:M 12 Dec 10:57:32.172 * Background saving terminated with success
+589:M 13 Dec 19:28:06.292 * 1 changes in 3600 seconds. Saving...
+589:M 13 Dec 19:28:06.294 * Background saving started by pid 3275
+3275:C 13 Dec 19:28:06.296 * DB saved on disk
+589:M 13 Dec 19:28:06.395 * Background saving terminated with success
+589:M 13 Dec 19:33:07.096 * 100 changes in 300 seconds. Saving...
+589:M 13 Dec 19:33:07.096 * Background saving started by pid 3326
+3326:C 13 Dec 19:33:07.099 * DB saved on disk
+589:M 13 Dec 19:33:07.200 * Background saving terminated with success
+589:M 13 Dec 19:38:08.033 * 100 changes in 300 seconds. Saving...
+589:M 13 Dec 19:38:08.034 * Background saving started by pid 3378
+3378:C 13 Dec 19:38:08.035 * DB saved on disk
+589:M 13 Dec 19:38:08.139 * Background saving terminated with success
+589:M 14 Dec 13:35:33.157 * 1 changes in 3600 seconds. Saving...
+589:M 14 Dec 13:35:33.158 * Background saving started by pid 6111
+6111:C 14 Dec 13:35:33.162 * DB saved on disk
+589:M 14 Dec 13:35:33.260 * Background saving terminated with success
+589:M 14 Dec 13:40:34.001 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 13:40:34.001 * Background saving started by pid 6139
+6139:C 14 Dec 13:40:34.004 * DB saved on disk
+589:M 14 Dec 13:40:34.106 * Background saving terminated with success
+589:M 14 Dec 13:50:50.930 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 13:50:50.931 * Background saving started by pid 6208
+6208:C 14 Dec 13:50:50.934 * DB saved on disk
+589:M 14 Dec 13:50:51.033 * Background saving terminated with success
+589:M 14 Dec 13:55:52.069 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 13:55:52.071 * Background saving started by pid 6245
+6245:C 14 Dec 13:55:52.078 * DB saved on disk
+589:M 14 Dec 13:55:52.172 * Background saving terminated with success
+589:M 14 Dec 14:00:53.010 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 14:00:53.010 * Background saving started by pid 6360
+6360:C 14 Dec 14:00:53.012 * DB saved on disk
+589:M 14 Dec 14:00:53.114 * Background saving terminated with success
+589:M 14 Dec 14:06:29.512 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 14:06:29.512 * Background saving started by pid 6372
+6372:C 14 Dec 14:06:29.515 * DB saved on disk
+589:M 14 Dec 14:06:29.614 * Background saving terminated with success
+589:M 14 Dec 14:11:30.087 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 14:11:30.088 * Background saving started by pid 6373
+6373:C 14 Dec 14:11:30.089 * DB saved on disk
+589:M 14 Dec 14:11:30.189 * Background saving terminated with success
+589:M 14 Dec 14:19:13.631 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 14:19:13.633 * Background saving started by pid 6377
+6377:C 14 Dec 14:19:13.636 * DB saved on disk
+589:M 14 Dec 14:19:13.735 * Background saving terminated with success
+589:M 14 Dec 14:24:14.053 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 14:24:14.053 * Background saving started by pid 6533
+6533:C 14 Dec 14:24:14.055 * DB saved on disk
+589:M 14 Dec 14:24:14.157 * Background saving terminated with success
+589:M 14 Dec 17:00:11.060 * 1 changes in 3600 seconds. Saving...
+589:M 14 Dec 17:00:11.061 * Background saving started by pid 6973
+6973:C 14 Dec 17:00:11.065 * DB saved on disk
+589:M 14 Dec 17:00:11.164 * Background saving terminated with success
+589:M 14 Dec 17:05:12.089 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 17:05:12.090 * Background saving started by pid 7024
+7024:C 14 Dec 17:05:12.091 * DB saved on disk
+589:M 14 Dec 17:05:12.190 * Background saving terminated with success
+589:M 14 Dec 21:17:57.070 * 1 changes in 3600 seconds. Saving...
+589:M 14 Dec 21:17:57.071 * Background saving started by pid 7951
+7951:C 14 Dec 21:17:57.073 * DB saved on disk
+589:M 14 Dec 21:17:57.172 * Background saving terminated with success
+589:M 14 Dec 21:22:58.050 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 21:22:58.050 * Background saving started by pid 7993
+7993:C 14 Dec 21:22:58.052 * DB saved on disk
+589:M 14 Dec 21:22:58.150 * Background saving terminated with success
+589:M 14 Dec 21:28:54.855 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 21:28:54.856 * Background saving started by pid 8018
+8018:C 14 Dec 21:28:54.858 * DB saved on disk
+589:M 14 Dec 21:28:54.958 * Background saving terminated with success
+589:M 14 Dec 21:33:55.071 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 21:33:55.072 * Background saving started by pid 8075
+8075:C 14 Dec 21:33:55.074 * DB saved on disk
+589:M 14 Dec 21:33:55.172 * Background saving terminated with success
+589:M 14 Dec 21:38:56.025 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 21:38:56.025 * Background saving started by pid 8116
+8116:C 14 Dec 21:38:56.030 * DB saved on disk
+589:M 14 Dec 21:38:56.126 * Background saving terminated with success
+589:M 14 Dec 21:48:03.167 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 21:48:03.167 * Background saving started by pid 8118
+8118:C 14 Dec 21:48:03.171 * DB saved on disk
+589:M 14 Dec 21:48:03.268 * Background saving terminated with success
+589:M 14 Dec 21:55:03.478 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 21:55:03.479 * Background saving started by pid 8160
+8160:C 14 Dec 21:55:03.482 * DB saved on disk
+589:M 14 Dec 21:55:03.584 * Background saving terminated with success
+589:M 14 Dec 22:41:21.300 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 22:41:21.301 * Background saving started by pid 8512
+8512:C 14 Dec 22:41:21.305 * DB saved on disk
+589:M 14 Dec 22:41:21.401 * Background saving terminated with success
+589:M 14 Dec 22:46:22.056 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 22:46:22.057 * Background saving started by pid 8655
+8655:C 14 Dec 22:46:22.060 * DB saved on disk
+589:M 14 Dec 22:46:22.157 * Background saving terminated with success
+589:M 14 Dec 22:51:23.075 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 22:51:23.075 * Background saving started by pid 8702
+8702:C 14 Dec 22:51:23.077 * DB saved on disk
+589:M 14 Dec 22:51:23.176 * Background saving terminated with success
+589:M 14 Dec 23:07:29.141 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 23:07:29.142 * Background saving started by pid 8738
+8738:C 14 Dec 23:07:29.143 * DB saved on disk
+589:M 14 Dec 23:07:29.246 * Background saving terminated with success
+589:M 14 Dec 23:49:52.310 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 23:49:52.311 * Background saving started by pid 8955
+8955:C 14 Dec 23:49:52.317 * DB saved on disk
+589:M 14 Dec 23:49:52.420 * Background saving terminated with success
+589:M 14 Dec 23:54:53.029 * 100 changes in 300 seconds. Saving...
+589:M 14 Dec 23:54:53.030 * Background saving started by pid 10510
+10510:C 14 Dec 23:54:53.032 * DB saved on disk
+589:M 14 Dec 23:54:53.131 * Background saving terminated with success
+589:M 15 Dec 00:31:03.537 * 100 changes in 300 seconds. Saving...
+589:M 15 Dec 00:31:03.538 * Background saving started by pid 13263
+13263:C 15 Dec 00:31:03.540 * DB saved on disk
+589:M 15 Dec 00:31:03.639 * Background saving terminated with success
+589:M 15 Dec 00:36:04.061 * 100 changes in 300 seconds. Saving...
+589:M 15 Dec 00:36:04.062 * Background saving started by pid 13354
+13354:C 15 Dec 00:36:04.064 * DB saved on disk
+589:M 15 Dec 00:36:04.162 * Background saving terminated with success
+589:signal-handler (1481733568) Received SIGTERM scheduling shutdown...
+589:M 15 Dec 00:39:28.486 # User requested shutdown...
+589:M 15 Dec 00:39:28.486 * Saving the final RDB snapshot before exiting.
+589:M 15 Dec 00:39:28.488 * DB saved on disk
+589:M 15 Dec 00:39:28.489 # Redis is now ready to exit, bye bye...
+14205:C 15 Dec 16:23:33.424 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+14205:M 15 Dec 16:23:33.426 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 14205
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+14205:M 15 Dec 16:23:33.430 # Server started, Redis version 3.2.0
+14205:M 15 Dec 16:23:33.436 * DB loaded from disk: 0.006 seconds
+14205:M 15 Dec 16:23:33.436 * The server is now ready to accept connections on port 6379
+14205:M 15 Dec 16:31:57.614 * 100 changes in 300 seconds. Saving...
+14205:M 15 Dec 16:31:57.615 * Background saving started by pid 14367
+14367:C 15 Dec 16:31:57.619 * DB saved on disk
+14205:M 15 Dec 16:31:57.716 * Background saving terminated with success
+14205:M 15 Dec 16:36:58.029 * 100 changes in 300 seconds. Saving...
+14205:M 15 Dec 16:36:58.061 * Background saving started by pid 14411
+14411:C 15 Dec 16:36:58.062 * DB saved on disk
+14205:M 15 Dec 16:36:58.162 * Background saving terminated with success
+14205:M 15 Dec 16:44:14.390 * 100 changes in 300 seconds. Saving...
+14205:M 15 Dec 16:44:14.391 * Background saving started by pid 14432
+14432:C 15 Dec 16:44:14.394 * DB saved on disk
+14205:M 15 Dec 16:44:14.492 * Background saving terminated with success
+14205:M 15 Dec 16:49:15.040 * 100 changes in 300 seconds. Saving...
+14205:M 15 Dec 16:49:15.073 * Background saving started by pid 14456
+14456:C 15 Dec 16:49:15.076 * DB saved on disk
+14205:M 15 Dec 16:49:15.179 * Background saving terminated with success
+14205:M 15 Dec 17:22:52.554 * 100 changes in 300 seconds. Saving...
+14205:M 15 Dec 17:22:52.586 * Background saving started by pid 14566
+14566:C 15 Dec 17:22:52.588 * DB saved on disk
+14205:M 15 Dec 17:22:52.688 * Background saving terminated with success
+14205:M 15 Dec 18:22:53.098 * 1 changes in 3600 seconds. Saving...
+14205:M 15 Dec 18:22:53.099 * Background saving started by pid 14676
+14676:C 15 Dec 18:22:53.101 * DB saved on disk
+14205:M 15 Dec 18:22:53.201 * Background saving terminated with success
+14205:M 19 Dec 14:33:57.667 * 1 changes in 3600 seconds. Saving...
+14205:M 19 Dec 14:33:57.667 * Background saving started by pid 19242
+19242:C 19 Dec 14:33:57.675 * DB saved on disk
+14205:M 19 Dec 14:33:57.769 * Background saving terminated with success
+14205:M 19 Dec 14:38:58.005 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 14:38:58.006 * Background saving started by pid 19352
+19352:C 19 Dec 14:38:58.047 * DB saved on disk
+14205:M 19 Dec 14:38:58.109 * Background saving terminated with success
+14205:M 19 Dec 15:38:59.007 * 1 changes in 3600 seconds. Saving...
+14205:M 19 Dec 15:38:59.008 * Background saving started by pid 20152
+20152:C 19 Dec 15:38:59.010 * DB saved on disk
+14205:M 19 Dec 15:38:59.112 * Background saving terminated with success
+14205:M 19 Dec 17:06:10.082 * 1 changes in 3600 seconds. Saving...
+14205:M 19 Dec 17:06:10.082 * Background saving started by pid 20989
+20989:C 19 Dec 17:06:10.085 * DB saved on disk
+14205:M 19 Dec 17:06:10.183 * Background saving terminated with success
+14205:M 19 Dec 17:11:11.001 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 17:11:11.002 * Background saving started by pid 21047
+21047:C 19 Dec 17:11:11.009 * DB saved on disk
+14205:M 19 Dec 17:11:11.104 * Background saving terminated with success
+14205:M 19 Dec 17:15:16.712 * 10000 changes in 60 seconds. Saving...
+14205:M 19 Dec 17:15:16.713 * Background saving started by pid 21059
+21059:C 19 Dec 17:15:16.720 * DB saved on disk
+14205:M 19 Dec 17:15:16.813 * Background saving terminated with success
+14205:M 19 Dec 17:20:17.015 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 17:20:17.016 * Background saving started by pid 21088
+21088:C 19 Dec 17:20:17.053 * DB saved on disk
+14205:M 19 Dec 17:20:17.117 * Background saving terminated with success
+14205:M 19 Dec 17:25:18.051 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 17:25:18.051 * Background saving started by pid 21155
+21155:C 19 Dec 17:25:18.054 * DB saved on disk
+14205:M 19 Dec 17:25:18.154 * Background saving terminated with success
+14205:M 19 Dec 17:32:46.675 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 17:32:46.676 * Background saving started by pid 21238
+21238:C 19 Dec 17:32:46.678 * DB saved on disk
+14205:M 19 Dec 17:32:46.778 * Background saving terminated with success
+14205:M 19 Dec 17:38:35.995 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 17:38:35.996 * Background saving started by pid 21313
+21313:C 19 Dec 17:38:36.000 * DB saved on disk
+14205:M 19 Dec 17:38:36.097 * Background saving terminated with success
+14205:M 19 Dec 17:43:37.000 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 17:43:37.000 * Background saving started by pid 21346
+21346:C 19 Dec 17:43:37.002 * DB saved on disk
+14205:M 19 Dec 17:43:37.101 * Background saving terminated with success
+21934:C 19 Dec 21:27:05.739 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+21934:M 19 Dec 21:27:05.741 * Increased maximum number of open files to 10032 (it was originally set to 256).
+21934:M 19 Dec 21:27:05.742 # Creating Server TCP listening socket *:6379: bind: Address already in use
+14205:M 19 Dec 21:30:03.419 * 1 changes in 3600 seconds. Saving...
+14205:M 19 Dec 21:30:03.420 * Background saving started by pid 21976
+21976:C 19 Dec 21:30:03.423 * DB saved on disk
+14205:M 19 Dec 21:30:03.522 * Background saving terminated with success
+14205:M 19 Dec 22:24:02.508 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 22:24:02.510 * Background saving started by pid 22339
+22339:C 19 Dec 22:24:02.515 * DB saved on disk
+14205:M 19 Dec 22:24:02.611 * Background saving terminated with success
+14205:M 19 Dec 22:29:03.018 * 100 changes in 300 seconds. Saving...
+14205:M 19 Dec 22:29:03.019 * Background saving started by pid 22368
+22368:C 19 Dec 22:29:03.020 * DB saved on disk
+14205:M 19 Dec 22:29:03.123 * Background saving terminated with success
+14205:M 20 Dec 10:02:37.266 * 1 changes in 3600 seconds. Saving...
+14205:M 20 Dec 10:02:37.267 * Background saving started by pid 22947
+22947:C 20 Dec 10:02:37.271 * DB saved on disk
+14205:M 20 Dec 10:02:37.370 * Background saving terminated with success
+14205:M 20 Dec 10:07:38.074 * 100 changes in 300 seconds. Saving...
+14205:M 20 Dec 10:07:38.075 * Background saving started by pid 23040
+23040:C 20 Dec 10:07:38.109 * DB saved on disk
+14205:M 20 Dec 10:07:38.176 * Background saving terminated with success
+14205:M 20 Dec 10:28:11.893 * 100 changes in 300 seconds. Saving...
+14205:M 20 Dec 10:28:11.894 * Background saving started by pid 23156
+23156:C 20 Dec 10:28:11.897 * DB saved on disk
+14205:M 20 Dec 10:28:11.997 * Background saving terminated with success
+14205:signal-handler (1482336444) Received SIGTERM scheduling shutdown...
+14205:M 22 Dec 00:07:24.462 # User requested shutdown...
+14205:M 22 Dec 00:07:24.462 * Saving the final RDB snapshot before exiting.
+14205:M 22 Dec 00:07:24.469 * DB saved on disk
+14205:M 22 Dec 00:07:24.470 # Redis is now ready to exit, bye bye...
+752:C 05 Jan 11:07:00.641 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+752:M 05 Jan 11:07:00.643 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 752
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+752:M 05 Jan 11:07:00.651 # Server started, Redis version 3.2.0
+752:M 05 Jan 11:07:00.652 * DB loaded from disk: 0.001 seconds
+752:M 05 Jan 11:07:00.652 * The server is now ready to accept connections on port 6379
+752:M 05 Jan 11:15:42.121 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 11:15:42.123 * Background saving started by pid 810
+810:C 05 Jan 11:15:42.125 * DB saved on disk
+752:M 05 Jan 11:15:42.224 * Background saving terminated with success
+752:M 05 Jan 11:20:43.055 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 11:20:43.055 * Background saving started by pid 825
+825:C 05 Jan 11:20:43.057 * DB saved on disk
+752:M 05 Jan 11:20:43.156 * Background saving terminated with success
+752:M 05 Jan 11:25:44.092 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 11:25:44.093 * Background saving started by pid 830
+830:C 05 Jan 11:25:44.098 * DB saved on disk
+752:M 05 Jan 11:25:44.194 * Background saving terminated with success
+752:M 05 Jan 11:30:45.068 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 11:30:45.069 * Background saving started by pid 837
+837:C 05 Jan 11:30:45.071 * DB saved on disk
+752:M 05 Jan 11:30:45.170 * Background saving terminated with success
+752:M 05 Jan 11:45:21.598 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 11:45:21.599 * Background saving started by pid 865
+865:C 05 Jan 11:45:21.602 * DB saved on disk
+752:M 05 Jan 11:45:21.700 * Background saving terminated with success
+752:M 05 Jan 11:50:22.070 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 11:50:22.070 * Background saving started by pid 904
+904:C 05 Jan 11:50:22.071 * DB saved on disk
+752:M 05 Jan 11:50:22.171 * Background saving terminated with success
+752:M 05 Jan 11:55:23.020 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 11:55:23.021 * Background saving started by pid 913
+913:C 05 Jan 11:55:23.023 * DB saved on disk
+752:M 05 Jan 11:55:23.122 * Background saving terminated with success
+752:M 05 Jan 13:48:57.580 * 1 changes in 3600 seconds. Saving...
+752:M 05 Jan 13:48:57.581 * Background saving started by pid 1100
+1100:C 05 Jan 13:48:57.583 * DB saved on disk
+752:M 05 Jan 13:48:57.681 * Background saving terminated with success
+752:M 05 Jan 13:53:58.025 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 13:53:58.025 * Background saving started by pid 1190
+1190:C 05 Jan 13:53:58.027 * DB saved on disk
+752:M 05 Jan 13:53:58.125 * Background saving terminated with success
+752:M 05 Jan 14:53:59.024 * 1 changes in 3600 seconds. Saving...
+752:M 05 Jan 14:53:59.024 * Background saving started by pid 1347
+1347:C 05 Jan 14:53:59.027 * DB saved on disk
+752:M 05 Jan 14:53:59.128 * Background saving terminated with success
+752:M 05 Jan 15:09:57.574 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:09:57.574 * Background saving started by pid 1473
+1473:C 05 Jan 15:09:57.576 * DB saved on disk
+752:M 05 Jan 15:09:57.674 * Background saving terminated with success
+752:M 05 Jan 15:14:58.044 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:14:58.045 * Background saving started by pid 1506
+1506:C 05 Jan 15:14:58.048 * DB saved on disk
+752:M 05 Jan 15:14:58.147 * Background saving terminated with success
+752:M 05 Jan 15:21:58.501 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:21:58.503 * Background saving started by pid 1610
+1610:C 05 Jan 15:21:58.508 * DB saved on disk
+752:M 05 Jan 15:21:58.605 * Background saving terminated with success
+752:M 05 Jan 15:26:59.010 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:26:59.010 * Background saving started by pid 1690
+1690:C 05 Jan 15:26:59.013 * DB saved on disk
+752:M 05 Jan 15:26:59.111 * Background saving terminated with success
+752:M 05 Jan 15:32:00.094 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:32:00.094 * Background saving started by pid 1785
+1785:C 05 Jan 15:32:00.097 * DB saved on disk
+752:M 05 Jan 15:32:00.196 * Background saving terminated with success
+752:M 05 Jan 15:42:23.408 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:42:23.419 * Background saving started by pid 1913
+1913:C 05 Jan 15:42:23.423 * DB saved on disk
+752:M 05 Jan 15:42:23.519 * Background saving terminated with success
+752:M 05 Jan 15:47:24.018 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:47:24.018 * Background saving started by pid 1972
+1972:C 05 Jan 15:47:24.020 * DB saved on disk
+752:M 05 Jan 15:47:24.123 * Background saving terminated with success
+752:M 05 Jan 15:57:51.260 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 15:57:51.260 * Background saving started by pid 2082
+2082:C 05 Jan 15:57:51.262 * DB saved on disk
+752:M 05 Jan 15:57:51.366 * Background saving terminated with success
+752:M 05 Jan 16:02:52.020 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 16:02:52.021 * Background saving started by pid 2138
+2138:C 05 Jan 16:02:52.022 * DB saved on disk
+752:M 05 Jan 16:02:52.123 * Background saving terminated with success
+752:M 05 Jan 16:36:01.877 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 16:36:01.877 * Background saving started by pid 2326
+2326:C 05 Jan 16:36:01.879 * DB saved on disk
+752:M 05 Jan 16:36:01.978 * Background saving terminated with success
+752:M 05 Jan 16:41:02.002 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 16:41:02.003 * Background saving started by pid 2352
+2352:C 05 Jan 16:41:02.004 * DB saved on disk
+752:M 05 Jan 16:41:02.108 * Background saving terminated with success
+752:M 05 Jan 16:53:57.364 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 16:53:57.366 * Background saving started by pid 2449
+2449:C 05 Jan 16:53:57.367 * DB saved on disk
+752:M 05 Jan 16:53:57.466 * Background saving terminated with success
+752:M 05 Jan 16:58:58.064 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 16:58:58.064 * Background saving started by pid 2502
+2502:C 05 Jan 16:58:58.067 * DB saved on disk
+752:M 05 Jan 16:58:58.167 * Background saving terminated with success
+752:M 05 Jan 17:03:59.082 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 17:03:59.083 * Background saving started by pid 2558
+2558:C 05 Jan 17:03:59.086 * DB saved on disk
+752:M 05 Jan 17:03:59.189 * Background saving terminated with success
+752:M 05 Jan 17:09:00.058 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 17:09:00.059 * Background saving started by pid 2635
+2635:C 05 Jan 17:09:00.061 * DB saved on disk
+752:M 05 Jan 17:09:00.159 * Background saving terminated with success
+752:M 05 Jan 17:14:21.143 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 17:14:21.143 * Background saving started by pid 2761
+2761:C 05 Jan 17:14:21.147 * DB saved on disk
+752:M 05 Jan 17:14:21.247 * Background saving terminated with success
+752:M 05 Jan 17:19:22.070 * 100 changes in 300 seconds. Saving...
+752:M 05 Jan 17:19:22.071 * Background saving started by pid 2869
+2869:C 05 Jan 17:19:22.074 * DB saved on disk
+752:M 05 Jan 17:19:22.172 * Background saving terminated with success
+3263:C 05 Jan 21:58:11.603 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+3263:M 05 Jan 21:58:11.605 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3263
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+3263:M 05 Jan 21:58:11.611 # Server started, Redis version 3.2.0
+3263:M 05 Jan 21:58:11.613 * DB loaded from disk: 0.002 seconds
+3263:M 05 Jan 21:58:11.613 * The server is now ready to accept connections on port 6379
+4884:C 06 Jan 10:23:29.260 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+4884:M 06 Jan 10:23:29.264 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 4884
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+4884:M 06 Jan 10:23:29.270 # Server started, Redis version 3.2.0
+4884:M 06 Jan 10:23:29.273 * DB loaded from disk: 0.002 seconds
+4884:M 06 Jan 10:23:29.273 * The server is now ready to accept connections on port 6379
+4884:M 06 Jan 10:28:30.004 * 100 changes in 300 seconds. Saving...
+4884:M 06 Jan 10:28:30.004 * Background saving started by pid 4916
+4916:C 06 Jan 10:28:30.007 * DB saved on disk
+4884:M 06 Jan 10:28:30.105 * Background saving terminated with success
+4884:M 06 Jan 10:39:43.523 * 100 changes in 300 seconds. Saving...
+4884:M 06 Jan 10:39:43.523 * Background saving started by pid 4938
+4938:C 06 Jan 10:39:43.525 * DB saved on disk
+4884:M 06 Jan 10:39:43.627 * Background saving terminated with success
+4884:M 06 Jan 10:53:53.250 * 100 changes in 300 seconds. Saving...
+4884:M 06 Jan 10:53:53.251 * Background saving started by pid 5046
+5046:C 06 Jan 10:53:53.259 * DB saved on disk
+4884:M 06 Jan 10:53:53.353 * Background saving terminated with success
+2685:C 09 Jan 15:43:24.800 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+2685:M 09 Jan 15:43:24.802 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 2685
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+2685:M 09 Jan 15:43:24.810 # Server started, Redis version 3.2.0
+2685:M 09 Jan 15:43:24.817 * DB loaded from disk: 0.008 seconds
+2685:M 09 Jan 15:43:24.817 * The server is now ready to accept connections on port 6379
+2685:M 09 Jan 15:48:25.021 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 15:48:25.022 * Background saving started by pid 2788
+2788:C 09 Jan 15:48:25.025 * DB saved on disk
+2685:M 09 Jan 15:48:25.123 * Background saving terminated with success
+2685:M 09 Jan 16:20:48.321 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 16:20:48.321 * Background saving started by pid 2932
+2932:C 09 Jan 16:20:48.323 * DB saved on disk
+2685:M 09 Jan 16:20:48.422 * Background saving terminated with success
+2685:M 09 Jan 16:26:40.727 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 16:26:40.727 * Background saving started by pid 2995
+2995:C 09 Jan 16:26:40.729 * DB saved on disk
+2685:M 09 Jan 16:26:40.831 * Background saving terminated with success
+2685:M 09 Jan 16:31:41.075 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 16:31:41.076 * Background saving started by pid 3011
+3011:C 09 Jan 16:31:41.077 * DB saved on disk
+2685:M 09 Jan 16:31:41.178 * Background saving terminated with success
+2685:M 09 Jan 16:48:42.499 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 16:48:42.502 * Background saving started by pid 3237
+3237:C 09 Jan 16:48:42.504 * DB saved on disk
+2685:M 09 Jan 16:48:42.603 * Background saving terminated with success
+2685:M 09 Jan 16:53:43.052 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 16:53:43.053 * Background saving started by pid 3270
+3270:C 09 Jan 16:53:43.056 * DB saved on disk
+2685:M 09 Jan 16:53:43.154 * Background saving terminated with success
+2685:M 09 Jan 16:58:44.052 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 16:58:44.052 * Background saving started by pid 3366
+3366:C 09 Jan 16:58:44.054 * DB saved on disk
+2685:M 09 Jan 16:58:44.154 * Background saving terminated with success
+2685:M 09 Jan 17:03:45.056 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 17:03:45.056 * Background saving started by pid 3444
+3444:C 09 Jan 17:03:45.058 * DB saved on disk
+2685:M 09 Jan 17:03:45.162 * Background saving terminated with success
+2685:M 09 Jan 17:10:19.470 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 17:10:19.470 * Background saving started by pid 3485
+3485:C 09 Jan 17:10:19.473 * DB saved on disk
+2685:M 09 Jan 17:10:19.570 * Background saving terminated with success
+2685:M 09 Jan 17:15:20.063 * 100 changes in 300 seconds. Saving...
+2685:M 09 Jan 17:15:20.064 * Background saving started by pid 3503
+3503:C 09 Jan 17:15:20.065 * DB saved on disk
+2685:M 09 Jan 17:15:20.165 * Background saving terminated with success
+2685:M 10 Jan 15:48:46.943 * 1 changes in 3600 seconds. Saving...
+2685:M 10 Jan 15:48:46.944 * Background saving started by pid 5153
+5153:C 10 Jan 15:48:46.946 * DB saved on disk
+2685:M 10 Jan 15:48:47.044 * Background saving terminated with success
+2685:M 10 Jan 15:53:48.077 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 15:53:48.077 * Background saving started by pid 5163
+5163:C 10 Jan 15:53:48.082 * DB saved on disk
+2685:M 10 Jan 15:53:48.178 * Background saving terminated with success
+2685:M 10 Jan 15:58:49.057 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 15:58:49.058 * Background saving started by pid 5212
+5212:C 10 Jan 15:58:49.066 * DB saved on disk
+2685:M 10 Jan 15:58:49.160 * Background saving terminated with success
+2685:M 10 Jan 16:03:50.006 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:03:50.007 * Background saving started by pid 5213
+5213:C 10 Jan 16:03:50.012 * DB saved on disk
+2685:M 10 Jan 16:03:50.109 * Background saving terminated with success
+2685:M 10 Jan 16:08:51.087 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:08:51.087 * Background saving started by pid 5219
+5219:C 10 Jan 16:08:51.089 * DB saved on disk
+2685:M 10 Jan 16:08:51.189 * Background saving terminated with success
+2685:M 10 Jan 16:13:52.020 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:13:52.021 * Background saving started by pid 5227
+5227:C 10 Jan 16:13:52.024 * DB saved on disk
+2685:M 10 Jan 16:13:52.122 * Background saving terminated with success
+2685:M 10 Jan 16:18:53.069 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:18:53.070 * Background saving started by pid 5230
+5230:C 10 Jan 16:18:53.071 * DB saved on disk
+2685:M 10 Jan 16:18:53.171 * Background saving terminated with success
+2685:M 10 Jan 16:23:54.101 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:23:54.101 * Background saving started by pid 5242
+5242:C 10 Jan 16:23:54.103 * DB saved on disk
+2685:M 10 Jan 16:23:54.201 * Background saving terminated with success
+2685:M 10 Jan 16:28:55.050 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:28:55.050 * Background saving started by pid 5250
+5250:C 10 Jan 16:28:55.059 * DB saved on disk
+2685:M 10 Jan 16:28:55.152 * Background saving terminated with success
+2685:M 10 Jan 16:33:56.003 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:33:56.003 * Background saving started by pid 5254
+5254:C 10 Jan 16:33:56.006 * DB saved on disk
+2685:M 10 Jan 16:33:56.106 * Background saving terminated with success
+2685:M 10 Jan 16:38:57.079 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:38:57.080 * Background saving started by pid 5255
+5255:C 10 Jan 16:38:57.082 * DB saved on disk
+2685:M 10 Jan 16:38:57.181 * Background saving terminated with success
+2685:M 10 Jan 16:43:58.093 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:43:58.094 * Background saving started by pid 5256
+5256:C 10 Jan 16:43:58.098 * DB saved on disk
+2685:M 10 Jan 16:43:58.197 * Background saving terminated with success
+2685:M 10 Jan 16:48:59.004 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:48:59.005 * Background saving started by pid 5258
+5258:C 10 Jan 16:48:59.008 * DB saved on disk
+2685:M 10 Jan 16:48:59.106 * Background saving terminated with success
+2685:M 10 Jan 16:54:00.017 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:54:00.018 * Background saving started by pid 5309
+5309:C 10 Jan 16:54:00.021 * DB saved on disk
+2685:M 10 Jan 16:54:00.120 * Background saving terminated with success
+2685:M 10 Jan 16:59:01.041 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 16:59:01.042 * Background saving started by pid 5315
+5315:C 10 Jan 16:59:01.044 * DB saved on disk
+2685:M 10 Jan 16:59:01.142 * Background saving terminated with success
+2685:M 10 Jan 17:04:02.046 * 100 changes in 300 seconds. Saving...
+2685:M 10 Jan 17:04:02.047 * Background saving started by pid 5370
+5370:C 10 Jan 17:04:02.049 * DB saved on disk
+2685:M 10 Jan 17:04:02.149 * Background saving terminated with success
+5644:C 11 Jan 15:22:05.922 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+5644:M 11 Jan 15:22:05.924 * Increased maximum number of open files to 10032 (it was originally set to 256).
+5644:M 11 Jan 15:22:05.925 # Creating Server TCP listening socket *:6379: bind: Address already in use
+2685:M 11 Jan 15:22:51.001 * 1 changes in 3600 seconds. Saving...
+2685:M 11 Jan 15:22:51.003 * Background saving started by pid 5694
+5694:C 11 Jan 15:22:51.012 * DB saved on disk
+2685:M 11 Jan 15:22:51.105 * Background saving terminated with success
+2685:M 11 Jan 15:27:52.042 * 100 changes in 300 seconds. Saving...
+2685:M 11 Jan 15:27:52.042 * Background saving started by pid 5715
+5715:C 11 Jan 15:27:52.043 * DB saved on disk
+2685:M 11 Jan 15:27:52.144 * Background saving terminated with success
+2685:M 11 Jan 15:37:51.469 * 100 changes in 300 seconds. Saving...
+2685:M 11 Jan 15:37:51.470 * Background saving started by pid 5775
+5775:C 11 Jan 15:37:51.472 * DB saved on disk
+2685:M 11 Jan 15:37:51.570 * Background saving terminated with success
+2685:M 11 Jan 15:42:52.100 * 100 changes in 300 seconds. Saving...
+2685:M 11 Jan 15:42:52.101 * Background saving started by pid 6382
+6382:C 11 Jan 15:42:52.102 * DB saved on disk
+2685:M 11 Jan 15:42:52.205 * Background saving terminated with success
+2685:M 11 Jan 15:59:42.259 * 100 changes in 300 seconds. Saving...
+2685:M 11 Jan 15:59:42.259 * Background saving started by pid 6412
+6412:C 11 Jan 15:59:42.262 * DB saved on disk
+2685:M 11 Jan 15:59:42.360 * Background saving terminated with success
+2685:M 11 Jan 16:04:43.047 * 100 changes in 300 seconds. Saving...
+2685:M 11 Jan 16:04:43.048 * Background saving started by pid 6419
+6419:C 11 Jan 16:04:43.080 * DB saved on disk
+2685:M 11 Jan 16:04:43.149 * Background saving terminated with success
+2685:M 11 Jan 17:06:02.084 * 1 changes in 3600 seconds. Saving...
+2685:M 11 Jan 17:06:02.084 * Background saving started by pid 6493
+6493:C 11 Jan 17:06:02.086 * DB saved on disk
+2685:M 11 Jan 17:06:02.185 * Background saving terminated with success
+2685:signal-handler (1484886488) Received SIGTERM scheduling shutdown...
+2685:M 20 Jan 12:28:08.223 # User requested shutdown...
+2685:M 20 Jan 12:28:08.224 * Saving the final RDB snapshot before exiting.
+2685:M 20 Jan 12:28:08.228 * DB saved on disk
+2685:M 20 Jan 12:28:08.228 # Redis is now ready to exit, bye bye...
+14441:C 23 Jan 16:03:28.567 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+14441:M 23 Jan 16:03:28.569 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 14441
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+14441:M 23 Jan 16:03:28.576 # Server started, Redis version 3.2.0
+14441:M 23 Jan 16:03:28.577 * DB loaded from disk: 0.001 seconds
+14441:M 23 Jan 16:03:28.577 * The server is now ready to accept connections on port 6379
+14441:M 23 Jan 16:08:29.015 * 100 changes in 300 seconds. Saving...
+14441:M 23 Jan 16:08:29.050 * Background saving started by pid 14935
+14935:C 23 Jan 16:08:29.051 * DB saved on disk
+14441:M 23 Jan 16:08:29.150 * Background saving terminated with success
+14441:M 23 Jan 16:32:10.058 * 100 changes in 300 seconds. Saving...
+14441:M 23 Jan 16:32:10.059 * Background saving started by pid 16307
+16307:C 23 Jan 16:32:10.061 * DB saved on disk
+14441:M 23 Jan 16:32:10.160 * Background saving terminated with success
+14441:signal-handler (1485186067) Received SIGTERM scheduling shutdown...
+14441:M 23 Jan 23:41:07.162 # User requested shutdown...
+14441:M 23 Jan 23:41:07.162 * Saving the final RDB snapshot before exiting.
+14441:M 23 Jan 23:41:07.163 * DB saved on disk
+14441:M 23 Jan 23:41:07.163 # Redis is now ready to exit, bye bye...
+4143:C 31 Jan 13:09:40.943 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+4143:M 31 Jan 13:09:40.946 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 4143
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+4143:M 31 Jan 13:09:40.952 # Server started, Redis version 3.2.0
+4143:M 31 Jan 13:09:40.952 * DB loaded from disk: 0.001 seconds
+4143:M 31 Jan 13:09:40.952 * The server is now ready to accept connections on port 6379
+4143:M 31 Jan 13:14:41.083 * 100 changes in 300 seconds. Saving...
+4143:M 31 Jan 13:14:41.085 * Background saving started by pid 4424
+4424:C 31 Jan 13:14:41.123 * DB saved on disk
+4143:M 31 Jan 13:14:41.189 * Background saving terminated with success
+37803:C 02 Feb 12:17:08.287 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+37803:M 02 Feb 12:17:08.289 * Increased maximum number of open files to 10032 (it was originally set to 256).
+37803:M 02 Feb 12:17:08.290 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 02 Feb 12:17:23.869 * 1 changes in 3600 seconds. Saving...
+4143:M 02 Feb 12:17:23.870 * Background saving started by pid 37839
+37839:C 02 Feb 12:17:23.875 * DB saved on disk
+4143:M 02 Feb 12:17:23.971 * Background saving terminated with success
+4143:M 02 Feb 12:22:18.494 * 10000 changes in 60 seconds. Saving...
+4143:M 02 Feb 12:22:18.495 * Background saving started by pid 38802
+38802:C 02 Feb 12:22:18.498 * DB saved on disk
+4143:M 02 Feb 12:22:18.596 * Background saving terminated with success
+4143:M 02 Feb 12:27:19.078 * 100 changes in 300 seconds. Saving...
+4143:M 02 Feb 12:27:19.078 * Background saving started by pid 39155
+39155:C 02 Feb 12:27:19.114 * DB saved on disk
+4143:M 02 Feb 12:27:19.183 * Background saving terminated with success
+39266:C 02 Feb 12:29:13.658 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+39266:M 02 Feb 12:29:13.660 * Increased maximum number of open files to 10032 (it was originally set to 256).
+39266:M 02 Feb 12:29:13.661 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 02 Feb 12:32:46.899 * 100 changes in 300 seconds. Saving...
+4143:M 02 Feb 12:32:46.900 * Background saving started by pid 39511
+39511:C 02 Feb 12:32:46.902 * DB saved on disk
+4143:M 02 Feb 12:32:47.000 * Background saving terminated with success
+4143:M 02 Feb 12:37:40.813 * 10000 changes in 60 seconds. Saving...
+4143:M 02 Feb 12:37:40.815 * Background saving started by pid 39862
+39862:C 02 Feb 12:37:40.847 * DB saved on disk
+4143:M 02 Feb 12:37:40.916 * Background saving terminated with success
+4143:M 02 Feb 12:38:41.043 * 10000 changes in 60 seconds. Saving...
+4143:M 02 Feb 12:38:41.043 * Background saving started by pid 39913
+39913:C 02 Feb 12:38:41.052 * DB saved on disk
+4143:M 02 Feb 12:38:41.146 * Background saving terminated with success
+4143:M 02 Feb 12:41:53.327 * 10000 changes in 60 seconds. Saving...
+4143:M 02 Feb 12:41:53.328 * Background saving started by pid 40104
+40104:C 02 Feb 12:41:53.333 * DB saved on disk
+4143:M 02 Feb 12:41:53.428 * Background saving terminated with success
+4143:M 02 Feb 12:46:54.016 * 100 changes in 300 seconds. Saving...
+4143:M 02 Feb 12:46:54.020 * Background saving started by pid 40424
+40424:C 02 Feb 12:46:54.028 * DB saved on disk
+4143:M 02 Feb 12:46:54.125 * Background saving terminated with success
+4143:M 02 Feb 12:48:53.193 * 10000 changes in 60 seconds. Saving...
+4143:M 02 Feb 12:48:53.193 * Background saving started by pid 40547
+40547:C 02 Feb 12:48:53.201 * DB saved on disk
+4143:M 02 Feb 12:48:53.296 * Background saving terminated with success
+4143:M 02 Feb 12:53:54.094 * 100 changes in 300 seconds. Saving...
+4143:M 02 Feb 12:53:54.095 * Background saving started by pid 40862
+40862:C 02 Feb 12:53:54.099 * DB saved on disk
+4143:M 02 Feb 12:53:54.195 * Background saving terminated with success
+4143:M 02 Feb 12:58:55.032 * 100 changes in 300 seconds. Saving...
+4143:M 02 Feb 12:58:55.034 * Background saving started by pid 41179
+41179:C 02 Feb 12:58:55.036 * DB saved on disk
+4143:M 02 Feb 12:58:55.134 * Background saving terminated with success
+4143:M 02 Feb 13:03:56.041 * 100 changes in 300 seconds. Saving...
+4143:M 02 Feb 13:03:56.042 * Background saving started by pid 41465
+41465:C 02 Feb 13:03:56.078 * DB saved on disk
+4143:M 02 Feb 13:03:56.142 * Background saving terminated with success
+64865:C 03 Feb 22:45:39.313 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+64865:M 03 Feb 22:45:39.317 * Increased maximum number of open files to 10032 (it was originally set to 256).
+64865:M 03 Feb 22:45:39.318 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 03 Feb 22:45:50.861 * 1 changes in 3600 seconds. Saving...
+4143:M 03 Feb 22:45:50.861 * Background saving started by pid 64898
+64898:C 03 Feb 22:45:50.865 * DB saved on disk
+4143:M 03 Feb 22:45:50.962 * Background saving terminated with success
+4143:M 03 Feb 22:53:44.537 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 22:53:44.538 * Background saving started by pid 65320
+65320:C 03 Feb 22:53:44.540 * DB saved on disk
+4143:M 03 Feb 22:53:44.639 * Background saving terminated with success
+4143:M 03 Feb 22:58:45.074 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 22:58:45.074 * Background saving started by pid 65570
+65570:C 03 Feb 22:58:45.076 * DB saved on disk
+4143:M 03 Feb 22:58:45.175 * Background saving terminated with success
+4143:M 03 Feb 23:17:57.381 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 23:17:57.383 * Background saving started by pid 66553
+66553:C 03 Feb 23:17:57.385 * DB saved on disk
+4143:M 03 Feb 23:17:57.484 * Background saving terminated with success
+4143:M 03 Feb 23:22:58.077 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 23:22:58.077 * Background saving started by pid 66803
+66803:C 03 Feb 23:22:58.112 * DB saved on disk
+4143:M 03 Feb 23:22:58.177 * Background saving terminated with success
+4143:M 03 Feb 23:28:01.734 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 23:28:01.734 * Background saving started by pid 67085
+67085:C 03 Feb 23:28:01.737 * DB saved on disk
+4143:M 03 Feb 23:28:01.836 * Background saving terminated with success
+4143:M 03 Feb 23:33:02.035 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 23:33:02.036 * Background saving started by pid 67446
+67446:C 03 Feb 23:33:02.038 * DB saved on disk
+4143:M 03 Feb 23:33:02.136 * Background saving terminated with success
+4143:M 03 Feb 23:47:44.658 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 23:47:44.658 * Background saving started by pid 68224
+68224:C 03 Feb 23:47:44.662 * DB saved on disk
+4143:M 03 Feb 23:47:44.758 * Background saving terminated with success
+4143:M 03 Feb 23:52:45.054 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 23:52:45.055 * Background saving started by pid 68498
+68498:C 03 Feb 23:52:45.089 * DB saved on disk
+4143:M 03 Feb 23:52:45.156 * Background saving terminated with success
+4143:M 03 Feb 23:57:46.067 * 100 changes in 300 seconds. Saving...
+4143:M 03 Feb 23:57:46.067 * Background saving started by pid 68774
+68774:C 03 Feb 23:57:46.069 * DB saved on disk
+4143:M 03 Feb 23:57:46.167 * Background saving terminated with success
+4143:M 04 Feb 00:02:47.027 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 00:02:47.028 * Background saving started by pid 69025
+69025:C 04 Feb 00:02:47.030 * DB saved on disk
+4143:M 04 Feb 00:02:47.129 * Background saving terminated with success
+4143:M 04 Feb 00:07:48.089 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 00:07:48.090 * Background saving started by pid 69276
+69276:C 04 Feb 00:07:48.091 * DB saved on disk
+4143:M 04 Feb 00:07:48.192 * Background saving terminated with success
+4143:M 04 Feb 00:21:24.532 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 00:21:24.532 * Background saving started by pid 70052
+70052:C 04 Feb 00:21:24.535 * DB saved on disk
+4143:M 04 Feb 00:21:24.634 * Background saving terminated with success
+4143:M 04 Feb 00:24:29.521 * 10000 changes in 60 seconds. Saving...
+4143:M 04 Feb 00:24:29.522 * Background saving started by pid 70205
+70205:C 04 Feb 00:24:29.525 * DB saved on disk
+4143:M 04 Feb 00:24:29.623 * Background saving terminated with success
+4143:M 04 Feb 00:36:20.004 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 00:36:20.004 * Background saving started by pid 70499
+70499:C 04 Feb 00:36:20.055 * DB saved on disk
+4143:M 04 Feb 00:36:20.108 * Background saving terminated with success
+72107:C 04 Feb 14:43:24.688 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+72107:M 04 Feb 14:43:24.690 * Increased maximum number of open files to 10032 (it was originally set to 256).
+72107:M 04 Feb 14:43:24.690 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 04 Feb 14:43:42.777 * 1 changes in 3600 seconds. Saving...
+4143:M 04 Feb 14:43:42.783 * Background saving started by pid 72146
+72146:C 04 Feb 14:43:42.789 * DB saved on disk
+4143:M 04 Feb 14:43:42.887 * Background saving terminated with success
+4143:M 04 Feb 14:48:43.060 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 14:48:43.060 * Background saving started by pid 72390
+72390:C 04 Feb 14:48:43.096 * DB saved on disk
+4143:M 04 Feb 14:48:43.162 * Background saving terminated with success
+4143:M 04 Feb 14:53:44.082 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 14:53:44.083 * Background saving started by pid 72915
+72915:C 04 Feb 14:53:44.087 * DB saved on disk
+4143:M 04 Feb 14:53:44.185 * Background saving terminated with success
+4143:M 04 Feb 14:58:07.424 * 10000 changes in 60 seconds. Saving...
+4143:M 04 Feb 14:58:07.424 * Background saving started by pid 73822
+73822:C 04 Feb 14:58:07.428 * DB saved on disk
+4143:M 04 Feb 14:58:07.529 * Background saving terminated with success
+4143:M 04 Feb 15:03:08.045 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:03:08.046 * Background saving started by pid 74507
+74507:C 04 Feb 15:03:08.050 * DB saved on disk
+4143:M 04 Feb 15:03:08.147 * Background saving terminated with success
+4143:M 04 Feb 15:08:09.008 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:08:09.009 * Background saving started by pid 75255
+75255:C 04 Feb 15:08:09.011 * DB saved on disk
+4143:M 04 Feb 15:08:09.110 * Background saving terminated with success
+75443:C 04 Feb 15:09:45.331 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+75443:M 04 Feb 15:09:45.334 * Increased maximum number of open files to 10032 (it was originally set to 256).
+75443:M 04 Feb 15:09:45.334 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 04 Feb 15:13:10.095 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:13:10.096 * Background saving started by pid 76224
+76224:C 04 Feb 15:13:10.102 * DB saved on disk
+4143:M 04 Feb 15:13:10.198 * Background saving terminated with success
+76838:C 04 Feb 15:15:13.798 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+76838:M 04 Feb 15:15:13.801 * Increased maximum number of open files to 10032 (it was originally set to 256).
+76838:M 04 Feb 15:15:13.802 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 04 Feb 15:18:11.088 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:18:11.089 * Background saving started by pid 77271
+77271:C 04 Feb 15:18:11.093 * DB saved on disk
+4143:M 04 Feb 15:18:11.193 * Background saving terminated with success
+4143:M 04 Feb 15:23:12.006 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:23:12.006 * Background saving started by pid 77959
+77959:C 04 Feb 15:23:12.008 * DB saved on disk
+4143:M 04 Feb 15:23:12.108 * Background saving terminated with success
+78100:C 04 Feb 15:25:35.274 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+78100:M 04 Feb 15:25:35.276 * Increased maximum number of open files to 10032 (it was originally set to 256).
+78100:M 04 Feb 15:25:35.276 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 04 Feb 15:28:13.028 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:28:13.029 * Background saving started by pid 78507
+78507:C 04 Feb 15:28:13.031 * DB saved on disk
+4143:M 04 Feb 15:28:13.129 * Background saving terminated with success
+4143:M 04 Feb 15:33:14.073 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:33:14.073 * Background saving started by pid 79035
+79035:C 04 Feb 15:33:14.108 * DB saved on disk
+4143:M 04 Feb 15:33:14.179 * Background saving terminated with success
+4143:M 04 Feb 15:41:37.860 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:41:37.860 * Background saving started by pid 79678
+79678:C 04 Feb 15:41:37.862 * DB saved on disk
+4143:M 04 Feb 15:41:37.965 * Background saving terminated with success
+4143:M 04 Feb 15:46:38.104 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:46:38.105 * Background saving started by pid 80276
+80276:C 04 Feb 15:46:38.140 * DB saved on disk
+4143:M 04 Feb 15:46:38.209 * Background saving terminated with success
+4143:M 04 Feb 15:51:39.020 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:51:39.021 * Background saving started by pid 81456
+81456:C 04 Feb 15:51:39.031 * DB saved on disk
+4143:M 04 Feb 15:51:39.122 * Background saving terminated with success
+4143:M 04 Feb 15:56:40.082 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 15:56:40.083 * Background saving started by pid 82172
+82172:C 04 Feb 15:56:40.084 * DB saved on disk
+4143:M 04 Feb 15:56:40.183 * Background saving terminated with success
+4143:M 04 Feb 16:01:41.031 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 16:01:41.032 * Background saving started by pid 82439
+82439:C 04 Feb 16:01:41.033 * DB saved on disk
+4143:M 04 Feb 16:01:41.134 * Background saving terminated with success
+4143:M 04 Feb 16:10:02.934 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 16:10:02.936 * Background saving started by pid 82889
+82889:C 04 Feb 16:10:02.970 * DB saved on disk
+4143:M 04 Feb 16:10:03.040 * Background saving terminated with success
+4143:M 04 Feb 16:15:04.004 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 16:15:04.004 * Background saving started by pid 83167
+83167:C 04 Feb 16:15:04.008 * DB saved on disk
+4143:M 04 Feb 16:15:04.107 * Background saving terminated with success
+4143:M 04 Feb 16:20:05.048 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 16:20:05.050 * Background saving started by pid 83418
+83418:C 04 Feb 16:20:05.056 * DB saved on disk
+4143:M 04 Feb 16:20:05.150 * Background saving terminated with success
+4143:M 04 Feb 16:25:06.048 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 16:25:06.049 * Background saving started by pid 83693
+83693:C 04 Feb 16:25:06.052 * DB saved on disk
+4143:M 04 Feb 16:25:06.154 * Background saving terminated with success
+4143:M 04 Feb 16:33:06.051 * 100 changes in 300 seconds. Saving...
+4143:M 04 Feb 16:33:06.052 * Background saving started by pid 83801
+83801:C 04 Feb 16:33:06.054 * DB saved on disk
+4143:M 04 Feb 16:33:06.152 * Background saving terminated with success
+47294:C 07 Feb 14:04:58.251 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+47294:M 07 Feb 14:04:58.254 * Increased maximum number of open files to 10032 (it was originally set to 256).
+47294:M 07 Feb 14:04:58.255 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 07 Feb 14:05:51.046 * 1 changes in 3600 seconds. Saving...
+4143:M 07 Feb 14:05:51.057 * Background saving started by pid 47362
+47362:C 07 Feb 14:05:51.062 * DB saved on disk
+4143:M 07 Feb 14:05:51.159 * Background saving terminated with success
+4143:M 07 Feb 14:10:52.024 * 100 changes in 300 seconds. Saving...
+4143:M 07 Feb 14:10:52.025 * Background saving started by pid 47639
+47639:C 07 Feb 14:10:52.026 * DB saved on disk
+4143:M 07 Feb 14:10:52.127 * Background saving terminated with success
+4143:M 07 Feb 15:10:53.028 * 1 changes in 3600 seconds. Saving...
+4143:M 07 Feb 15:10:53.062 * Background saving started by pid 50228
+50228:C 07 Feb 15:10:53.065 * DB saved on disk
+4143:M 07 Feb 15:10:53.167 * Background saving terminated with success
+75134:C 08 Feb 15:52:40.740 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+75134:M 08 Feb 15:52:40.742 * Increased maximum number of open files to 10032 (it was originally set to 256).
+75134:M 08 Feb 15:52:40.743 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 08 Feb 15:53:01.531 * 1 changes in 3600 seconds. Saving...
+4143:M 08 Feb 15:53:01.532 * Background saving started by pid 75173
+75173:C 08 Feb 15:53:01.536 * DB saved on disk
+4143:M 08 Feb 15:53:01.634 * Background saving terminated with success
+4143:M 08 Feb 15:58:02.059 * 100 changes in 300 seconds. Saving...
+4143:M 08 Feb 15:58:02.059 * Background saving started by pid 75423
+75423:C 08 Feb 15:58:02.060 * DB saved on disk
+4143:M 08 Feb 15:58:02.159 * Background saving terminated with success
+4143:M 08 Feb 16:10:50.582 * 100 changes in 300 seconds. Saving...
+4143:M 08 Feb 16:10:50.582 * Background saving started by pid 76142
+76142:C 08 Feb 16:10:50.584 * DB saved on disk
+4143:M 08 Feb 16:10:50.687 * Background saving terminated with success
+4143:M 08 Feb 16:15:51.031 * 100 changes in 300 seconds. Saving...
+4143:M 08 Feb 16:15:51.031 * Background saving started by pid 76443
+76443:C 08 Feb 16:15:51.035 * DB saved on disk
+4143:M 08 Feb 16:15:51.133 * Background saving terminated with success
+20229:C 10 Feb 16:06:42.284 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+20229:M 10 Feb 16:06:42.286 * Increased maximum number of open files to 10032 (it was originally set to 256).
+20229:M 10 Feb 16:06:42.287 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 10 Feb 16:06:57.420 * 1 changes in 3600 seconds. Saving...
+4143:M 10 Feb 16:06:57.421 * Background saving started by pid 20273
+20273:C 10 Feb 16:06:57.427 * DB saved on disk
+4143:M 10 Feb 16:06:57.522 * Background saving terminated with success
+4143:M 10 Feb 16:17:09.549 * 100 changes in 300 seconds. Saving...
+4143:M 10 Feb 16:17:09.549 * Background saving started by pid 20778
+20778:C 10 Feb 16:17:09.551 * DB saved on disk
+4143:M 10 Feb 16:17:09.651 * Background saving terminated with success
+4143:M 10 Feb 17:17:10.038 * 1 changes in 3600 seconds. Saving...
+4143:M 10 Feb 17:17:10.038 * Background saving started by pid 23145
+23145:C 10 Feb 17:17:10.041 * DB saved on disk
+4143:M 10 Feb 17:17:10.143 * Background saving terminated with success
+7783:C 13 Feb 18:01:29.580 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+7783:M 13 Feb 18:01:29.582 * Increased maximum number of open files to 10032 (it was originally set to 256).
+7783:M 13 Feb 18:01:29.585 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 13 Feb 18:01:48.481 * 1 changes in 3600 seconds. Saving...
+4143:M 13 Feb 18:01:48.486 * Background saving started by pid 7820
+7820:C 13 Feb 18:01:48.492 * DB saved on disk
+4143:M 13 Feb 18:01:48.587 * Background saving terminated with success
+4143:M 13 Feb 18:06:49.032 * 100 changes in 300 seconds. Saving...
+4143:M 13 Feb 18:06:49.033 * Background saving started by pid 8075
+8075:C 13 Feb 18:06:49.036 * DB saved on disk
+4143:M 13 Feb 18:06:49.137 * Background saving terminated with success
+4143:M 13 Feb 18:21:13.148 * 100 changes in 300 seconds. Saving...
+4143:M 13 Feb 18:21:13.148 * Background saving started by pid 8952
+8952:C 13 Feb 18:21:13.151 * DB saved on disk
+4143:M 13 Feb 18:21:13.249 * Background saving terminated with success
+4143:M 13 Feb 18:26:14.013 * 100 changes in 300 seconds. Saving...
+4143:M 13 Feb 18:26:14.014 * Background saving started by pid 9218
+9218:C 13 Feb 18:26:14.016 * DB saved on disk
+4143:M 13 Feb 18:26:14.117 * Background saving terminated with success
+13792:C 13 Feb 20:35:34.592 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+13792:M 13 Feb 20:35:34.602 * Increased maximum number of open files to 10032 (it was originally set to 256).
+13792:M 13 Feb 20:35:34.604 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 13 Feb 20:35:49.858 * 1 changes in 3600 seconds. Saving...
+4143:M 13 Feb 20:35:49.859 * Background saving started by pid 13827
+13827:C 13 Feb 20:35:49.860 * DB saved on disk
+4143:M 13 Feb 20:35:49.986 * Background saving terminated with success
+4143:M 13 Feb 20:40:50.072 * 100 changes in 300 seconds. Saving...
+4143:M 13 Feb 20:40:50.073 * Background saving started by pid 14151
+14151:C 13 Feb 20:40:50.074 * DB saved on disk
+4143:M 13 Feb 20:40:50.176 * Background saving terminated with success
+14264:C 13 Feb 20:42:21.785 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+14264:M 13 Feb 20:42:21.789 * Increased maximum number of open files to 10032 (it was originally set to 256).
+14264:M 13 Feb 20:42:21.790 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 13 Feb 20:48:32.697 * 100 changes in 300 seconds. Saving...
+4143:M 13 Feb 20:48:32.699 * Background saving started by pid 14641
+14641:C 13 Feb 20:48:32.703 * DB saved on disk
+4143:M 13 Feb 20:48:32.802 * Background saving terminated with success
+4143:M 13 Feb 20:53:33.058 * 100 changes in 300 seconds. Saving...
+4143:M 13 Feb 20:53:33.060 * Background saving started by pid 14965
+14965:C 13 Feb 20:53:33.062 * DB saved on disk
+4143:M 13 Feb 20:53:33.163 * Background saving terminated with success
+36149:C 14 Feb 15:12:16.477 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+36149:M 14 Feb 15:12:16.479 * Increased maximum number of open files to 10032 (it was originally set to 256).
+36149:M 14 Feb 15:12:16.480 # Creating Server TCP listening socket *:6379: bind: Address already in use
+4143:M 14 Feb 15:12:35.442 * 1 changes in 3600 seconds. Saving...
+4143:M 14 Feb 15:12:35.443 * Background saving started by pid 36190
+36190:C 14 Feb 15:12:35.446 * DB saved on disk
+4143:M 14 Feb 15:12:35.545 * Background saving terminated with success
+4143:M 14 Feb 15:17:36.080 * 100 changes in 300 seconds. Saving...
+4143:M 14 Feb 15:17:36.081 * Background saving started by pid 37103
+37103:C 14 Feb 15:17:36.085 * DB saved on disk
+4143:M 14 Feb 15:17:36.183 * Background saving terminated with success
+4143:M 14 Feb 15:22:37.089 * 100 changes in 300 seconds. Saving...
+4143:M 14 Feb 15:22:37.091 * Background saving started by pid 37859
+37859:C 14 Feb 15:22:37.095 * DB saved on disk
+4143:M 14 Feb 15:22:37.194 * Background saving terminated with success
+4143:M 14 Feb 15:27:38.029 * 100 changes in 300 seconds. Saving...
+4143:M 14 Feb 15:27:38.037 * Background saving started by pid 38467
+38467:C 14 Feb 15:27:38.037 * DB saved on disk
+4143:M 14 Feb 15:27:38.139 * Background saving terminated with success
+4143:signal-handler (1487261031) Received SIGTERM scheduling shutdown...
+4143:M 17 Feb 00:03:51.453 # User requested shutdown...
+4143:M 17 Feb 00:03:51.453 * Saving the final RDB snapshot before exiting.
+4143:M 17 Feb 00:03:51.458 * DB saved on disk
+4143:M 17 Feb 00:03:51.458 # Redis is now ready to exit, bye bye...

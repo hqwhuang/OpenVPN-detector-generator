@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OpenVPN toolkit</title>
+    {% load static %}
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/table.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'css/freelancer.min.css' %}" rel="stylesheet">
+    <!--[if lte IE 8]>
+            <script src="{% static 'js/excanvas.js' %}"></script>
+        <![endif]-->
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    {#    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">#}
+    {#    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">#}
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">OpenVPN toolkit</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/online">Online detector</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/offline">Offline detector</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/sender">Packet generator</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="{% static 'img/online.png' %}" alt="">
+                <div class="intro-text">
+                    <span class="name">online detector</span>
+                    <hr class="star-light">
+                    <span class="skills">You can monitor OpenVPN packet traffic situation</span>
+                </div>
+            </div>
+        </div>
+        <p><br></p>
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+            </div>
+            <div class="col-md-4 column">
+                <form id="sniff" action="/online/start" method="get">
+                    <label for="iface">Please select the device you would like to sniff</label>
+                    <select id="iface" name="iface">
+                        {% for i in device %}
+                            <option value={{ i }}>{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    <br>
+                    <button class="btn btn-default" type="submit" id="go">Start monitor</button>
+                </form>
+                <a style="font-style: italic;color: #2C3E50" href="/online/download">Download captured openVPN packets</a>
+            </div>
+            <div class="col-md-4 column">
+            </div>
+        </div>
+        <br>
+        <div class="row clearfix" id="report">
+            <div class="col-md-4 column">
+            </div>
+            <div class="col-md-4 column">
+                <table width="300">
+                    <tbody>
+                    <tr>
+                        <td>
+                            Total packets:
+                        </td>
+                        <td width="100">
+                            {{ total }}
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total OpenVPN packet:
+                        </td>
+                        <td width="100">
+                            {{ num_openVPN }}
+                        </td>
+                        <td>
+                            {{ chart_true }}%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total suspicious OpenVPN packet:
+                        </td>
+                        <td width="100">
+                            {{ num_suspVPN }}
+                        </td>
+                        <td>
+                            {{ chart_susp }}%
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4 column">
+            </div>
+            <br>
+            <canvas id="something" width="500" height="400"></canvas>
+            <br>
+            <div class="col-md-4 column">
+            </div>
+            <div class="col-md-4 column">
+                <table width="300">
+                    <tbody>
+                    <tr>
+                        <td>
+                            OpenVPN packet
+                        </td>
+                        <td>
+                            <button type="button" class="btn disabled btn-sm" style="background-color: #2c9c69"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Suspicious OpenVPN packet
+                        </td>
+                        <td>
+                            <button type="button" class="btn disabled btn-sm" style="background-color: #C07AB8"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Other packet
+                        </td>
+                        <td>
+                            <button type="button" class="btn disabled btn-sm" style="background-color: #637b85"></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4 column">
+            </div>
+            <br>
+            <canvas id="something2" width="600" height="400"></canvas>
+        </div>
+    </div>
+</header>
+
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Location</h3>
+                    <p>The University of Hong Kong
+                        <br>Pokfulam, Hong Kong</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>About OpenVPN toolkit</h3>
+                    <p>OpenVPN toolkit is a free to use, open source OpenVPN detector and sender created by HKU.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; HKU 2016
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+
+<!-- jQuery -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' %}"></script>#}
+
+<!-- Contact Form JavaScript -->
+<script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+<script src="{% static 'js/contact_me.js' %}"></script>
+
+<!-- Theme JavaScript -->
+<script src="{% static 'js/freelancer.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/Chart.min.js' %}"></script>
+<script type="text/javascript">
+    var data = [
+        {
+            value: {{ chart_true }},
+            color:"#2c9c69"
+        },
+        {
+            value : {{ chart_susp }},
+            color : "#C07AB8"
+        },
+        {
+            value : {{ chart_false }},
+            color : "#637b85"
+        },
+
+    ];
+    var canvas = document.getElementById("something");
+    var ctx = canvas.getContext("2d");
+    new Chart(ctx).Doughnut(data);
+</script>
+<script type="text/javascript">
+    var canvas = document.getElementById("something2");
+    var ctx = canvas.getContext("2d");
+    var data = {
+		labels: ["opcode 1", "opcode 2", "opcode 3", "opcode 4", "opcode 5", "opcode 6", "opcode 7", "opcode 8", "opcode 9"],
+		datasets: [
+			{
+				label: "My First dataset",
+				fillColor: "rgba(220,220,220,0.5)",
+				strokeColor: "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(220,220,220,0.75)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data: [{{opcode1}}, {{opcode2}}, {{opcode3}}, {{opcode4}}, {{opcode5}}, {{opcode6}}, {{opcode7}}, {{opcode8}}, {{opcode9}}]
+			}
+		]
+	};
+    new Chart(ctx).Bar(data);
+</script>
+</body>
+
+</html>

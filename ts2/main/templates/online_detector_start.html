@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OpenVPN toolkit</title>
+    {% load static %}
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'css/freelancer.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/table.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    {#    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">#}
+    {#    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">#}
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">OpenVPN toolkit</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/online">Online detector</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/offline">Offline detector</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/sender">Packet generator</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="{% static 'img/online.png' %}" alt="">
+                <div class="intro-text">
+                    <span class="name">online detector</span>
+                    <hr class="star-light">
+                    <span class="skills">You can monitor OpenVPN packet traffic situation</span>
+                </div>
+            </div>
+        </div>
+        <p><br></p>
+        <div id="report">
+
+        </div>
+        <p><br></p>
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+            </div>
+            <div class="col-md-4 column">
+                <form id="sniff">
+                    <button class="btn btn-default" type="submit" id="go">Stop</button>
+                </form>
+            </div>
+            <div class="col-md-4 column">
+            </div>
+        </div>
+        <div id="report_finish">
+
+        </div>
+    </div>
+</header>
+
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Location</h3>
+                    <p>The University of Hong Kong
+                        <br>Pokfulam, Hong Kong</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>About OpenVPN toolkit</h3>
+                    <p>OpenVPN toolkit is a free to use, open source OpenVPN detector and sender created by HKU.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; HKU 2016
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+
+<!-- jQuery -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' %}"></script>#}
+
+<!-- Contact Form JavaScript -->
+<script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+<script src="{% static 'js/contact_me.js' %}"></script>
+
+<!-- Theme JavaScript -->
+<script src="{% static 'js/freelancer.min.js' %}"></script>
+<script type="text/javascript" src='{% static "js/reconnecting-websocket.min.js" %}'></script>
+<script>
+    $(function() {
+        // When we're using HTTPS, use WSS too.
+        var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws";
+{#        var chatsock = new ReconnectingWebSocket(ws_scheme + '://' + window.location.host + "/chat" + window.location.pathname);#}
+        var chatsock = new ReconnectingWebSocket(ws_scheme + '://' + window.location.host + "/online_detector"+"/{{ dev }}");
+
+        chatsock.onmessage = function(message) {
+            var data = JSON.parse(message.data);
+            if(typeof(data) == 'number')
+            {
+                var report = $("#report");
+                report.html('Packets sent and received: '+data);
+            }
+            else
+            {
+                var opcode = '&o1='+data.opcode1+'&o2='+data.opcode2+'&o3='+data.opcode3+'&o4='+data.opcode4+'&o5='+data.opcode5+'&o6='+data.opcode6+'&o7='+data.opcode7+'&o8='+data.opcode8+'&o9='+data.opcode9;
+                window.location.href = '/online/finish?num_openVPN=' + data.num_openVPN+'&total='+data.total+'&percentage=' + data.percentage + '&num_suspVPN=' + data.num_suspVPN + '&percentage_susp=' + data.percentage_susp+opcode;
+            }
+        };
+
+        $("#sniff").on("submit", function(event) {
+            $('#sniff').html("<button class=\"btn btn-default\" type=\"submit\" id=\"go\">Analyzing...</button>");
+            var message = {
+                command: 'watch'
+            };
+            chatsock.send(JSON.stringify(message));
+            return false;
+        });
+    });
+</script>
+</body>
+
+</html>
