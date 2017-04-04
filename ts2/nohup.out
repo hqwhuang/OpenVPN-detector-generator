@@ -1351,3 +1351,26 @@
 4143:M 17 Feb 00:03:51.453 * Saving the final RDB snapshot before exiting.
 4143:M 17 Feb 00:03:51.458 * DB saved on disk
 4143:M 17 Feb 00:03:51.458 # Redis is now ready to exit, bye bye...
+96514:C 04 Apr 08:30:52.221 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+96514:M 04 Apr 08:30:52.223 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.0 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 96514
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+96514:M 04 Apr 08:30:52.233 # Server started, Redis version 3.2.0
+96514:M 04 Apr 08:30:52.235 * DB loaded from disk: 0.001 seconds
+96514:M 04 Apr 08:30:52.235 * The server is now ready to accept connections on port 6379

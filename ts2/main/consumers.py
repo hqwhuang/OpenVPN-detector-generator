@@ -4,7 +4,6 @@ from channels import Group
 from channels.sessions import channel_session
 import os
 from scapy.all import *
-import pyshark
 from scapy.layers.inet import IP
 from scapy.layers.l2 import Ether
 from scapy.layers.inet import TCP,UDP
